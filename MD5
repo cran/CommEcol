@@ -1,5 +1,5 @@
-fc91cf2082274a1ea1b996078fc6ef74 *DESCRIPTION
-bad98502e4bf43b6f07acbe1a761c8d5 *NAMESPACE
+1d0693a1720c1208fc9d07ea7e184afb *DESCRIPTION
+120487a43c378501f6d7c014eb6e44ef *NAMESPACE
 b0d81fc36d1eeea9d6805e86b8573a55 *R/anRpackage-internal.R
 eace84c2cced3f2e694b182d379e3038 *R/autosimi.R
 996493fb724fadfb1698e9b892ec0a2d *R/compas.R
@@ -12,15 +12,16 @@ cd9f6b84a19d49550cbedcabf6a4fd01 *R/part.p.tree.R
 987470f3bb5240fadf8f3be38005850c *R/print.treeNodf.R
 3465e33fa9b099a63f22962a96861d24 *R/print.treeNodfTest.R
 21ca5289bd12a1e183dafa967786f64d *R/select.window.R
+82275f6fe37af22203ab77fb4e80dd2d *R/standExtent.R
 da1dce859297b4de0e718d3128fa9c23 *R/treeNodf.R
 497d230ca8c94738e4721712d70730f6 *R/treeNodfOne.R
 6de694fbbbafbd406148e49582d7d45b *R/treeNodfTest.R
-6dca6979df4505776bc63f502e514fc8 *data/japi.rda
-4c0fac6d712a2e4e92178935174c2b7b *data/sites4.6.rda
-b669bd236520d66164b547cb0583643d *data/sites5.6.rda
-176073bf071de7a57ac2a50db92f2316 *data/sites6.6.rda
-ecac2dffeb65475d667761284a5b2487 *data/stairs6.rda
-2f1b9c1ff5791bd743e2c75e92d1b4fc *data/tree6.rda
+c5380ece04338a1c27b9dcd893a6837e *data/japi.rda
+b388a47e5ef8147b68c9a83aee2070c6 *data/sites4.6.rda
+cfa78c48a54dc0a75bb2ecd880dd0871 *data/sites5.6.rda
+7696e65c650119a9b4c0a3c2d6f20333 *data/sites6.6.rda
+4a507c091c003bcd8d6991c3c9f0c58a *data/stairs6.rda
+3199a6661e83eee87d191904446afdd0 *data/tree6.rda
 a65f5b25e9eecd63e36fec05b3f6f671 *man/CommEcol-internal.Rd
 3434f3aa2eb21d5e324b84e1739aad9b *man/CommEcol.Rd
 63c1b012b002f9d20746eb24df952412 *man/autosimi.Rd
@@ -36,5 +37,6 @@ aaab1bc60e43082ab2dd4566b9ab8734 *man/part.m.tree.Rd
 695ff06159882f6bdd31bfab3e77ef5f *man/sites5.6.Rd
 8958337a8157ca2a5da8f4e2d085b64f *man/sites6.6.Rd
 5446b50b20d1533628ceed24d811b69a *man/stairs6.Rd
+ae46165ff38962feb254a03810382ac5 *man/standExtent.Rd
 5fa2f457a75f0e440c33e20c7552b319 *man/tree6.Rd
 73d1f008c6648f1704b0e0cd233a5b2e *man/treeNodf.Rd

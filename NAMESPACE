@@ -1,5 +1,6 @@
 ######### Export functions to users.
 export(autosimi, compas, 
+      standExtent,
       part.m.tree, part.p.tree, 
       select.window, 
       treeNodf, treeNodfTest,
