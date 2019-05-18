@@ -1,15 +1,17 @@
-######### Export functions to users.
+# ######## Export functions to users.
 export(autosimi, compas, 
       standExtent,
       part.m.tree, part.p.tree, 
       select.window, 
       treeNodf, treeNodfTest,
-      dis.goodall, dis.chao, dis.nness, dis.nness.find.m
+      dis.goodall, dis.chao, dis.nness, dis.nness.find.m,
+      betaRegDisp
 )
 
 
 ######### Import function from other packages.
-import(vegan, ape, picante, graphics, stats, utils)# entire packages imported.
+import(vegan, ape, picante, graphics, stats, utils, betapart)# entire packages imported.
+importFrom(adespatial, beta.div) 
 #importFrom(vegan, nestednodf) #only nestednodf from vegan is imported.
 #importFrom(gmp, chooseZ)
 #importFrom(gmp, asNumeric)
