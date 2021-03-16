@@ -12,15 +12,17 @@
 \arguments{
   \item{comm}{Dataframe or matrix with samples in rows and species in columns.}
   \item{p.simi}{The partial similarity index to be used in the Goodall index. Partial match to "steinhaus" (raw abundance data), or "gower" (normalized abundance data).}
-  \item{approach}{The two approachs to compute Goodall index. Partial match to "proportion" or "chisquare".}
+  \item{approach}{The two approaches to compute Goodall index. Partial match to "proportion" or "chisquare".}
   }
 
 \details{
-Communities usually are composed of many rare and only a few common/frequent species. Although rare, a species may provide a valuable information in the estimation of resemblance between samples. However, the use of raw abundances makes the contribution of rare species to be negligible to the resulting index value. For instance, dropping a common species from the community data table usually will make much larger differences in the dissimilarity matrix than dropping a rare species.
+Communities are usually composed of many rare and only a few common/frequent species. Although rare, a species may provide a valuable information in the estimation of resemblance between samples. However, the use of raw abundances makes the contribution of rare species to be negligible to the resulting index value. For instance, dropping a common species from the community data table usually will make much larger differences in the dissimilarity matrix than dropping a rare species.
 
 There are a few indices that give more importance to an individual belonging to a rare than to a common/frequent species (see \code{\link{dis.chao}} and \code{\link{dis.nness}}). Notice, however, that this differential weight of species can also be obtained, for instance, by log-transforming or standardizing data (e.g. dividing by maximum within each species) (Melo in preparation). In this sense, an extreme case in which rare and common species have the same weight is in the use of presence/absence data.
 
 The implementation of Goodall index (Goodall 1966) follows Legendre & Legendre (1998, pp. 269-273). They suggest to use the "steinhaus" index for raw species abundance data and the "gower" partial similarity index (\code{p.simi}) for normalized data. The index can be calculated in two ways or approaches ("proportion" or "chisquare") and values produced by them should be very different, although this is mostly due to scale; they are monotonically correlated. Notice Legendre & Legendre (1998) present a similarity version of this index. The one produced by this function is a dissimilarity, computed simply as 1-similarity. See the examples below for some behaviors of the index.
+
+One important issue made clear by Legendre & Legendre (1998, pp. 270-271) is that the dissimilarity value for a pair of sites depnds on other sites present in the data matrix. If changes are made to some sites, the resulting dissimilarity values for all remaining pairs are modified (see example below).
 }
 
 \value{
