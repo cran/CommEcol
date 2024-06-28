@@ -10,7 +10,7 @@ export(autosimi, compas,
 
 
 ######### Import function from other packages.
-import(vegan, ape, picante, graphics, stats, utils, betapart)# entire packages imported.
+import(vegan, ape, picante, graphics, stats, utils, betapart, gmp, rncl)# entire packages imported.
 importFrom(adespatial, beta.div) 
 #importFrom(vegan, nestednodf) #only nestednodf from vegan is imported.
 #importFrom(gmp, chooseZ)

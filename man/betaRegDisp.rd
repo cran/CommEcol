@@ -105,7 +105,7 @@ Legendre, P. and M. De Caceres. 2013. Beta diversity as the variance of communit
 # window size of 3 (ws=3) and a dataset of 10 samples, beta diversity for the
 # samples 1-3 will be much lower than for samples 8-10.   
 
-SimComm <- function(n = 21, MaxS = 30, LocS = 10){
+SimComm <- function(n = 19, MaxS = 24, LocS = 8){
     s <- seq (LocS, MaxS, length.out = n)
     mat <- matrix(0, n, MaxS, dimnames = 
                       list(paste("site", 1:n, sep = "_"), 
@@ -117,7 +117,7 @@ SimComm <- function(n = 21, MaxS = 30, LocS = 10){
     return(mat)
 }
 
-mat <- SimComm(n = 21, MaxS = 30, LocS = 10)
+mat <- SimComm(n = 19, MaxS = 24, LocS = 8)
 
 #Creating an environmental gradient:
 grad <- 1:nrow(mat)
@@ -139,8 +139,7 @@ mtext("Environmental gradient", cex = 1.3, 1, -0.1, outer = TRUE)
 par(op)
 
 
-\dontrun{
-## Not run: 
+\donttest{
 ##Example 2
 data(varespec)
 data(varechem)
@@ -158,6 +157,5 @@ for(i in 1:ncol(resu)){
 }
 mtext("Environmental gradient", cex = 1.3, 1, 0, outer = TRUE)
 par(op)
-## End(Not run)
 }
 }

@@ -71,11 +71,13 @@ dis.chao(dat3, index="jaccard", version="rare")
 ### Example 2: "rare" version of the Chao index simplifies to the 
 # "probability" version if no rare species (with 1 or 2 individuals) is present.
 data(japi)
-dim(japi) # 75 sampling units (stones) and 66 morphospecies of 
-          # stream macroinvertebrates.
+dim(japi) 
+# 75 sampling units (stones) and 66 morphospecies of stream macroinvertebrates.
 japi.m <- as.matrix(japi)
-japi.2 <- ifelse(japi.m==1, 3, japi.m) # no singletons.
-japi.3 <- ifelse(japi.2==2, 3, japi.2) # no doubletons.
+japi.2 <- ifelse(japi.m==1, 3, japi.m) 
+# no singletons.
+japi.3 <- ifelse(japi.2==2, 3, japi.2) 
+# no doubletons.
 
 sort(
      dis.chao(japi.3, index='jac', version='rare')  
@@ -87,7 +89,7 @@ sort(
 # Consecutive stones are spaced 1-6 m. The set of the first 25 stones should be
 # more dissimilar to the last set of 25 stones than the middle set 
 # (simply because of spatial autocorrelation).
-japi.pa <- ifelse(japi.m > 0, 1, 0) # presence-absence data
+japi.pa <- ifelse(japi.m > 0, 1, 0) 
 japi.1st <- japi.pa[ 1:25, ]
 japi.2nd <- japi.pa[26:50, ]
 japi.3rd <- japi.pa[51:75, ]
@@ -96,7 +98,8 @@ japi.inc <- rbind(
                  colSums(japi.1st),
                  colSums(japi.2nd),
                  colSums(japi.3rd)
-) # species frequency of occurrence in the three sets of stones.
+) 
+# species frequency of occurrence in the three sets of stones.
 
 dis.chao(japi.inc, index="jaccard", freq=c(25, 25, 25) )
 }
